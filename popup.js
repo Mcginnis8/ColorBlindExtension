@@ -4,10 +4,10 @@ if (document.querySelector(".popup")) {
     let buttonOn = false;
     function invert() {
         alert("hi")
-        document.body.style.filter = "invert(1) hue-rotate(180deg)";
+        document.body.style.filter = "invert(0) hue-rotate(0deg)";
         let media = document.querySelectorAll("img, picture, video");
         media.forEach((mediaItem) => {
-            mediaItem.style.filter = "invert(1) hue-rotate(180deg)"
+            mediaItem.style.filter = "invert(0) hue-rotate(0deg)"
         })
     }
     button.addEventListener("click", () => {
@@ -38,28 +38,28 @@ if (document.querySelector(".popup")) {
     let buttonOn2 = false;
     function invert() {
         alert("hi")
-        document.body.style.filter = "invert(1) hue-rotate(180deg)";
+        document.body.style.filter = "invert(0) hue-rotate(0deg)";
         let media = document.querySelectorAll("img, picture, video");
         media.forEach((mediaItem) => {
-            mediaItem.style.filter = "invert(1) hue-rotate(180deg)"
+            mediaItem.style.filter = "invert(0) hue-rotate(0deg)"
         })
     }
-    button.addEventListener("click", () => {
+    button2.addEventListener("click", () => {
         if (!buttonOn2) {
             buttonOn2 = true;
 
-            button2.style.animation = "transformToBlue 1s ease-in-out 0s forwards"
-            circle2.style.animation = "moveCircleRight 1s ease-in-out 0s forwards"
+            button2.style.animation = "transformToBlue2 1s ease-in-out 0s forwards"
+            circle2.style.animation = "moveCircleRight2 1s ease-in-out 0s forwards"
             chrome.tabs.executeScript({
-                file: 'appOn.js'
+                file: 'appOn2.js'
             })
         }
         else {
             buttonOn2 = false;
-            button2.style.animation = "transformToYellow 1s ease-in-out 0s forwards"
-            circle2.style.animation = "moveCircleLeft 1s ease-in-out 0s forwards"
+            button2.style.animation = "transformToYellow2 1s ease-in-out 0s forwards"
+            circle2.style.animation = "moveCircleLeft2 1s ease-in-out 0s forwards"
             chrome.tabs.executeScript({
-                file: 'appOff.js'
+                file: 'appOff2.js'
             })
         }
     })
@@ -72,32 +72,30 @@ if (document.querySelector(".popup")) {
     let buttonOn3 = false;
     function invert() {
         alert("hi")
-        document.body.style.filter = "invert(1) hue-rotate(180deg)";
+        document.body.style.filter = "invert(0) hue-rotate(0deg)";
         let media = document.querySelectorAll("img, picture, video");
         media.forEach((mediaItem) => {
-            mediaItem.style.filter = "invert(1) hue-rotate(180deg)"
+            mediaItem.style.filter = "invert(0) hue-rotate(0deg)"
         })
     }
-    button.addEventListener("click", () => {
+    button3.addEventListener("click", () => {
         if (!buttonOn3) {
             buttonOn3 = true;
 
-            button3.style.animation = "transformToBlue 1s ease-in-out 0s forwards"
-            circle3.style.animation = "moveCircleRight 1s ease-in-out 0s forwards"
+            button3.style.animation = "transformToBlue3 1s ease-in-out 0s forwards"
+            circle3.style.animation = "moveCircleRight3 1s ease-in-out 0s forwards"
             chrome.tabs.executeScript({
-                file: 'appOn.js'
+                file: 'appOn3.js'
             })
         }
         else {
             buttonOn3 = false;
-            button3.style.animation = "transformToYellow 1s ease-in-out 0s forwards"
-            circle3.style.animation = "moveCircleLeft 1s ease-in-out 0s forwards"
+            button3.style.animation = "transformToYellow3 1s ease-in-out 0s forwards"
+            circle3.style.animation = "moveCircleLeft3 1s ease-in-out 0s forwards"
             chrome.tabs.executeScript({
-                file: 'appOff.js'
+                file: 'appOff3.js'
             })
         }
     })
 
 }
-
-
