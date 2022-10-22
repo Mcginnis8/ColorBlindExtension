@@ -12,7 +12,7 @@
 <style>
     .popup {
         min-width: 344px;
-        min-height: 188px;
+        min-height: 500px;
         background: #FFFFFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
@@ -26,8 +26,8 @@
 
     }
 
-    .yellow {
-        color: #FBE36D;
+    .purple {
+        color: #df58e4;
     }
 
     .blue {
@@ -40,7 +40,27 @@
     }
 
     .button {
-        background-color: #FDFCA3;
+        background-color: #8ABFF0;
+        position: relative;
+        height: 2rem;
+        width: 4rem;
+        border-radius: 25px;
+        transition: 1s;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .button2 {
+        background-color: #8ABFF0;
+        position: relative;
+        height: 2rem;
+        width: 4rem;
+        border-radius: 25px;
+        transition: 1s;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .button3 {
+        background-color: #8ABFF0;
         position: relative;
         height: 2rem;
         width: 4rem;
@@ -57,6 +77,22 @@
         pointer-events: none;
     }
 
+    .half2 {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    .half3 {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
     .circle {
         position: absolute;
         top: 0;
@@ -64,7 +100,33 @@
         height: 32px;
         width: 32px;
         border-radius: 50%;
-        background-color: rgb(255, 213, 0);
+        background-color: #df58e4;
+        pointer-events: none;
+        transition: 1s;
+
+    }
+
+    .circle2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        background-color: #df58e4;
+        pointer-events: none;
+        transition: 1s;
+
+    }
+
+    .circle3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        background-color: #df58e4;
         pointer-events: none;
         transition: 1s;
 
@@ -72,7 +134,7 @@
 
     @keyframes transformToBlue {
         0% {
-            background-color: #FDFCA3;
+            background-color: #df58e4;
         }
 
         100% {
@@ -86,7 +148,7 @@
         }
 
         100% {
-            background-color: #FDFCA3;
+            background-color: #df58e4;
         }
     }
 
@@ -94,13 +156,13 @@
         0% {
             left: 0;
             transform: translateX(0);
-            background-color: rgb(255, 213, 0);
+            background-color: #df58e4;
         }
 
         100% {
             left: 100%;
             transform: translateX(-100%);
-            background-color: #588BE4;
+            background-color: #df58e4;
         }
     }
 
@@ -114,24 +176,41 @@
         100% {
             left: 0;
             transform: translateX(0);
-            background-color: rgb(255, 213, 0);
+            background-color: #588BE4;
         }
     }
 </style>
 
 <body>
     <div class="popup">
-        <h1> <span class="yellow">Invert</span><span class="blue">.IO</span></h1>
+        <h1> <span class="purple">ColorFix</span><span class="blue"></span></h1>
         <p>
-            Bored of looking at websites the same way?
-            Meet Invert.io, a chrome extension that can change your website from dark mood to light mode and vice versa!
-            :)
+            A helpful tool to solve colorblindness while browsing the internet
         </p>
-
+        <p>
+            Deuteranopia
+        </p>
         <div class="button">
             <div class="half" style="left: 5px;">On</div>
             <div class="half" style="right: 5px; text-align: right;">Off</div>
             <div class="circle"></div>
+        </div>
+        <p>
+            Protanopia
+        </p>
+        <div class="button2">
+            <div class="half2" style="left: 5px;">On</div>
+            <div class="half2" style="right: 5px; text-align: right;">Off</div>
+            <div class="circle2"></div>
+        </div>
+        <p>
+            Tritanopia
+        </p>
+
+        <div class="button3">
+            <div class="half3" style="left: 5px;">On</div>
+            <div class="half3" style="right: 5px; text-align: right;">Off</div>
+            <div class="circle3"></div>
         </div>
     </div>
 
