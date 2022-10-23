@@ -1,10 +1,10 @@
 {
     "name": "ColorFix",
-    "version": "1.0.0",
+    "version": "0.0.0.1",
     "manifest_version": 2,
-    "icons": { "16": "16Icon.ico",
-           "48": "48Icon.ico",
-          "128": "128Icon.ico" },
+    "icons": { "16": "16Icon.png",
+           "48": "48Icon.png",
+          "128": "128Icon.png" },
     "description": "ColorFix will shift certain color hues to fix some commonly hard to see colors for users on Chrome.",
     "background": {
         "scripts": [
