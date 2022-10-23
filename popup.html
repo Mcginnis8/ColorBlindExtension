@@ -10,63 +10,75 @@
 
 </head>
 <style>
-    .popup {
-        min-width: 300px;
-        min-height: 400px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        padding: 1rem;
-    }
 
+    .popup {
+        min-width: 270px;
+        min-height: 370px;
+        background-color: #4a555e;
+        padding-top: 5px;
+    }
+    #LogoIMG{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-family: "Lobster";
         text-align: center;
+        font-color: white;
 
-    }
-
-    .purple {
-        color: #df58e4;
-    }
-
-    .blue {
-        color: #588BE4;
     }
 
     p {
-        font-family: "Raleway", sans-serif;
+        text-align: center;
+        color: white;
         font-size: 0.75rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
     }
 
     .button {
-        background-color: #8ABFF0;
+        background-color: #18191A;
+        color: #808080;
         position: relative;
         height: 2rem;
         width: 4rem;
         border-radius: 25px;
         transition: 1s;
         font-family: "Raleway", sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
     }
 
     .button2 {
-        background-color: #8ABFF0;
+        background-color: #18191A;
+        color: #808080;
         position: relative;
         height: 2rem;
         width: 4rem;
         border-radius: 25px;
         transition: 1s;
         font-family: "Raleway", sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
     }
 
     .button3 {
-        background-color: #8ABFF0;
+        background-color: #18191A;
+        color: #808080;
         position: relative;
         height: 2rem;
         width: 4rem;
         border-radius: 25px;
         transition: 1s;
         font-family: "Raleway", sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
     }
 
     .half {
@@ -100,7 +112,7 @@
         height: 32px;
         width: 32px;
         border-radius: 50%;
-        background-color: #df58e4;
+        background-color: #FAFAFA;
         pointer-events: none;
         transition: 1s;
 
@@ -113,7 +125,7 @@
         height: 32px;
         width: 32px;
         border-radius: 50%;
-        background-color: #df58e4;
+        background-color: #FAFAFA;
         pointer-events: none;
         transition: 1s;
 
@@ -126,7 +138,7 @@
         height: 32px;
         width: 32px;
         border-radius: 50%;
-        background-color: #df58e4;
+        background-color: #FAFAFA;
         pointer-events: none;
         transition: 1s;
 
@@ -134,61 +146,61 @@
 
     @keyframes transformToBlue {
         0% {
-            background-color: #df58e4;
+            background-color: #18191A;
         }
 
         100% {
-            background-color: #8ABFF0;
+            background-color: #FAFAFA;
         }
     }
 
     @keyframes transformToYellow {
         0% {
-            background-color: #8ABFF0;
+            background-color: #FAFAFA;
         }
 
         100% {
-            background-color: #df58e4;
+            background-color: #18191A;
         }
     }
 
     @keyframes transformToBlue2 {
         0% {
-            background-color: #df58e4;
+            background-color: #18191A;
         }
 
         100% {
-            background-color: #8ABFF0;
+            background-color: #FAFAFA;
         }
     }
 
     @keyframes transformToYellow2 {
         0% {
-            background-color: #8ABFF0;
+            background-color: #FAFAFA;
         }
 
         100% {
-            background-color: #df58e4;
+            background-color: #18191A;
         }
     }
 
     @keyframes transformToBlue3 {
         0% {
-            background-color: #df58e4;
+            background-color: #18191A;
         }
 
         100% {
-            background-color: #8ABFF0;
+            background-color: #FAFAFA;
         }
     }
 
     @keyframes transformToYellow3 {
         0% {
-            background-color: #8ABFF0;
+            background-color: #FAFAFA;
         }
 
         100% {
-            background-color: #df58e4;
+            background-color: #18191A;
         }
     }
 
@@ -196,13 +208,13 @@
         0% {
             left: 0;
             transform: translateX(0);
-            background-color: #df58e4;
+            background-color: #18191A;
         }
 
         100% {
             left: 100%;
             transform: translateX(-100%);
-            background-color: #df58e4;
+            background-color: #18191A;
         }
     }
 
@@ -210,13 +222,13 @@
         0% {
             left: 100%;
             transform: translateX(-100%);
-            background-color: #588BE4;
+            background-color: #FAFAFA;
         }
 
         100% {
             left: 0;
             transform: translateX(0);
-            background-color: #588BE4;
+            background-color: #FAFAFA;
         }
     }
 
@@ -226,13 +238,13 @@
         0% {
             left: 0;
             transform: translateX(0);
-            background-color: #df58e4;
+            background-color: #18191A;
         }
 
         100% {
             left: 100%;
             transform: translateX(-100%);
-            background-color: #df58e4;
+            background-color: #18191A;
         }
     }
 
@@ -240,26 +252,26 @@
         0% {
             left: 100%;
             transform: translateX(-100%);
-            background-color: #588BE4;
+            background-color: #FAFAFA;
         }
 
         100% {
             left: 0;
             transform: translateX(0);
-            background-color: #588BE4;
+            background-color: #FAFAFA;
         }
     }
     @keyframes moveCircleRight3 {
         0% {
             left: 0;
             transform: translateX(0);
-            background-color: #df58e4;
+            background-color: #18191A;
         }
 
         100% {
             left: 100%;
             transform: translateX(-100%);
-            background-color: #df58e4;
+            background-color: #18191A;
         }
     }
 
@@ -267,20 +279,20 @@
         0% {
             left: 100%;
             transform: translateX(-100%);
-            background-color: #588BE4;
+            background-color: #FAFAFA;
         }
 
         100% {
             left: 0;
             transform: translateX(0);
-            background-color: #588BE4;
+            background-color: #FAFAFA;
         }
     }
 </style>
 
 <body>
     <div class="popup">
-        <h1> <span class="purple">ColorFix</span><span class="blue"></span></h1>
+        <img id = "LogoIMG" src="ColorFixLogoSquare.png" alt="Color Fix" width="80" height="75">
         <p>
             A helpful tool to solve colorblindness while browsing the internet
         </p>
@@ -303,7 +315,6 @@
         <p>
             Tritanopia
         </p>
-
         <div class="button3">
             <div class="half3" style="left: 5px;">On</div>
             <div class="half3" style="right: 5px; text-align: right;">Off</div>
