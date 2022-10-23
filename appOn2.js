@@ -1,10 +1,7 @@
-// this is the code which will be injected into a given page...
-
 (function () {
-    document.querySelector("html").style.filter = "invert(0) hue-rotate(45deg)";
-    // document.body.style.filter = "invert(1) hue-rotate(180deg)"
+    document.querySelector("html").style.filter = "invert(0) hue-rotate(190deg)";
     let media = document.querySelectorAll("img, picture, video");
     media.forEach((mediaItem) => {
-        mediaItem.style.filter = "invert(0) hue-rotate(45deg)"
+        mediaItem.style.filter = "invert(0) hue-rotate(190deg)"
     })
 })();

@@ -5,7 +5,7 @@
     "icons": { "16": "16Icon.ico",
            "48": "48Icon.ico",
           "128": "128Icon.ico" },
-    "description": "ColorFix will shift color hues to fix some commonly hard to see colors for users on Chrome.",
+    "description": "ColorFix will shift certain color hues to fix some commonly hard to see colors for users on Chrome.",
     "background": {
         "scripts": [
             "popup.js"
